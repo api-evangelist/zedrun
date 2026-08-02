@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://api.zed.run/
+status: discontinued
+notes: >-
+  The Zed.run public API host api.zed.run responds with an application/json
+  body of {"message":"zed shutdown"} (HTTP 200), indicating the developer/API
+  surface is currently shut down. No versioning policy, deprecation policy,
+  SLA, or status page could be located for the API. Common well-known paths on
+  zed.run (/.well-known/security.txt, /.well-known/openid-configuration,
+  /.well-known/api-catalog) and /llms.txt return the SPA index.html
+  (content-type text/html), i.e. no real discovery documents are published.
+api_hosts:
+- host: https://api.zed.run/
+  status: 200
+  body: '{"message":"zed shutdown"}'
+  interpretation: API shut down
+versioning: null
+deprecation: null
+sla: null
+status_page: null
+deprecated_operations: []

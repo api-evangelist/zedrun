@@ -1,7 +1,15 @@
 aid: zedrun
 name: Zed.run
-description: Zed.run is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Zed.run is a digital horse racing platform where players buy, breed, and race
+  NFT racehorses, originally built on the Ethereum and Polygon blockchains and
+  developed by Virtually Human Studio. Players collect uniquely bred digital
+  racehorses as non-fungible tokens, enter them into skill- and bloodline-based
+  races, and trade them on a secondary marketplace. Zed.run was surfaced as a
+  portfolio company of a16z and added to the API Evangelist network for
+  enrichment. As of this enrichment pass the public API host (api.zed.run)
+  returns a "zed shutdown" message, indicating the developer/API surface is
+  currently discontinued or paused, so no live API artifacts could be harvested.
 url: https://raw.githubusercontent.com/api-evangelist/zedrun/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +17,45 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://zed.run/zed-logo-beta.svg
 tags:
 - Company
+- Gaming
+- Blockchain
+- NFT
+- Web3
+- Horse Racing
+- Digital Collectibles
+- Polygon
 apis: []
+common:
+- type: Website
+  url: https://zed.run
+- type: DomainSecurity
+  url: security/zedrun-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/zedrun-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
